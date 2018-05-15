@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+
+<title>My Weather Channel</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging whena phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- *************** LOAD A GOOGLE FONT ****************** -->
+<link href="https://fonts.googleapis.com/css?family=Lato:100,400,700" rel="stylesheet">
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+
+<!-- removes the browser interface -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-title" content="Weather">
+<link rel="shortcut icon" sizes="16x16" href="phoneIcon/icon-16x16.png">
+<link href="icon/i120.png" rel="apple-touch-icon" />
+<link href="icon/i152.png" rel="apple-touch-icon" sizes="152x152" />
+<link href="icon/i167.png" rel="apple-touch-icon" sizes="167x167" />
+<link href="icon/i180.png" rel="apple-touch-icon" sizes="180x180" />
+<link href="icon/a192.png" rel="icon" sizes="192x192" />
+<link href="icon/a128.png" rel="icon" sizes="128x128" />
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+     
+</head>
+<body>
+	<div id="wrapper">
+	<header>
+		<figure class="wu"><img src="images/weatherLogo.png"></figure>
+    <h1>My Weather Channel</h1>
+    <h2>JSON data from the Weather Underground</h2>
+    </header>
+    
+   <nav>
+		 <input type="text" maxlength="5" id="zip" value="">
+		 	<button onclick="loadWeather()">Check this zipcode</button>
+	 </nav>
+    
+    
+<!-- page content here -->
+<main>
+<section id="left">
+	<div id="location">City UT</div>
+	<div id="weather">Current Conditions</div>
+	<div id="temperature">00</div>
+	<div id="desc">A mix of clouds</div>
+</section>
+
+<section id="right">
+<div>
+	<span id="r1c1"></span>
+	<span> <img id="r1c2" ></span>
+	<span id="r1c3"></span>
+	<span id="r1c4"></span>
+</div>	
+<div>
+	<span id="r2c1"></span>
+	<span> <img id="r2c2" ></span>
+	<span id="r2c3"></span>
+	<span id="r2c4"></span>
+</div>	
+<div>
+	<span id="r3c1"></span>
+	<span> <img id="r3c2" ></span>
+	<span id="r3c3"></span>
+	<span id="r3c4"></span>
+</div>	
+</section>
+    
+    
+    
+    
+    
+    
+    
+    </main><!-- end content -->
+    
+    
+    <footer>
+    <p>&bull;Paul Cheney &bull; Pluralsight Practice File</p>
+    </footer>
+    
+		</div> <!-- end wrapper -->
+</body>
+	<script type="text/javascript" src="js/main.js"></script>
+</html>
